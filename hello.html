@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body{font-family:system-ui,Arial,sans-serif;min-width:220px;margin:10px}
+      .row{display:flex;align-items:center;gap:8px}
+      .badge{font-size:12px;padding:2px 6px;border-radius:4px;background:#e5e7eb;color:#111}
+      .on{background:#d1fae5;color:#065f46}
+      .off{background:#fee2e2;color:#991b1b}
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <label>
+        <input id="toggle" type="checkbox" /> Habilitar extensão
+      </label>
+      <span id="status" class="badge off">OFF</span>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

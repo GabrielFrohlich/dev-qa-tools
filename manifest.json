@@ -1,0 +1,23 @@
+{
+    "name": "Developer QA Tools",
+    "description": "This extension provides a faker.js integration for generating fake data.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "hello.html"
+    },
+    "background": {
+        "service_worker": "scripts/serviceWorker.js"
+    },
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["vendor/faker-bundle.js", "scripts/content.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}

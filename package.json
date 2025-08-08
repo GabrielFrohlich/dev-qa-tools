@@ -1,0 +1,27 @@
+{
+  "name": "dev-qa-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:vendor": "esbuild vendor/faker-entry.js --bundle --format=iife --global-name=fakerVendor --outfile=vendor/faker-bundle.js",
+    "build": "npm run build:vendor",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielFrohlich/dev-qa-tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielFrohlich/dev-qa-tools/issues"
+  },
+  "homepage": "https://github.com/GabrielFrohlich/dev-qa-tools#readme",
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.1"
+  }
+}
